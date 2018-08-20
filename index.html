@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <title>My Store</title>
+    
+    <!-- BOOTSTRAP v4: Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- ********************** EXTERNAL STYLES ********************** -->
+    
+    <!-- BOOTSTRAP v4 - DOCS PAGE: https://getbootstrap.com/docs/4.0/components/alerts/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    
+    
+    <!-- ********************** CUSTOM STYLES ********************** -->
+    
+    <!-- GLOBAL APP STYLES -->
+    <link rel="stylesheet" href="app-global-styles.css">
+    
+    
+    <!-- ********************** EXTERNAL SCRIPTS ********************** -->
+    
+    <!-- jQuery LIBRARY / TOOLSET -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- Bootstrap CSS LIBRARY JAVASCRIPT SUPPORT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    
+    <!-- Product page CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+    <!-- MAIN AngularJS FRAMEWORK -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    
+    <!-- MAIN AngularJS FRAMEWORK PLUGIN - HANDLES APP MODULE ROUTING REQUESTS -->
+    <script src="https://code.angularjs.org/1.6.6/angular-route.min.js"></script>
+    
+    
+    <!-- ********************** CUSTOM SCRIPTS ********************** -->
+    
+    <!-- CUSTOM APP WIDE JAVASCRIPT CODE -->
+    <script src="app-global-scripts.js"></script>
+    
+    <!-- THIS IS THE AngularJS APP STARTUP CODE THAT WILL LINK EVERYTHING TOGETHER -->
+    <script src="scripts/angular-startup.js"></script>
+    
+    <!-- THESE WILL BE THE AngularJS MODULE / PAGE CONTROLLERS - ADD NEW ONES AT THE END, JUST BEFORE THE </head> TAG -->
+    <script src="scripts/modules/home/home-controller.js"></script>
+    <script src="scripts/modules/products/products-controller.js"></script> 
+    <script src="scripts/modules/profile/profile-controller.js"></script> 
+    <script src="scripts/modules/about/about-controller.js"></script> 
+  </head>
+
+  <!-- ng-app="APP_NAME" IS REQUIRED FOR THE AngularJS APP INSTANCE TO KNOW WHICH TAG TO TAKE OVER -->
+  <body ng-app="My-Store" id="store-body">
+    
+    <!-- ********************** APP MENU / HEADER ********************** -->
+    
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        
+        <!-- THIS <a>My Mobile Forum</a> IS THE APP TITLE AT THE TOP -->
+        <a class="navbar-brand" href="#!/home" style="font-family:arial; color:purple; font-size:25px">TEHILAH GROCERY SUPPLIERS</a>
+        
+        <!-- THIS <button> ONLY APPEARS TOP RIGHT WHEN THE WINDOW WIDTH IS SMALL ENOUGH TO BE CONSIDERED A MOBILE SCREEN -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myStoreNavbar" aria-controls="myStoreNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- THIS IS THE ACTUAL MENU STRUCTURE THAT THE USER SEES AND CAN CLICK ON TO NAVIGATE THE APP -->
+        <div class="collapse navbar-collapse" id="myStoreNavbar">
+          
+          <div class="navbar-nav">
+            
+            <!-- ********************** MENU ITEMS GO INSIDE HERE ********************** -->
+            
+            <a class="nav-item nav-link active" href="#!/home" data-toggle="collapse" data-target="#myStoreNavbar" aria-controls="myStoreNavbar">
+              Home
+            </a>
+            
+            <a class="nav-item nav-link" href="#!/products" data-toggle="collapse" data-targeStore" aria-controStore">
+              Products
+            </a>
+            
+            <a class="nav-item nav-link" href="#!/profile" data-toggle="collapse" data-targeStore" aria-controStore">
+              Contact
+            </a>
+            
+            <a class="nav-item nav-link" href="#!/about" data-toggle="collapse" data-targeStore" aria-controStore">
+              About
+            </a>
+            
+          </div>
+          
+        </div>
+        
+      </nav>
+    </div>
+    
+    <!-- ********************** ANGULAR MODULES VIEWS / PAGES WILL LOAD INSIDE THIS DIV ********************** -->
+    
+    <div ng-view id="app-view">
+      THIS TEXT WILL BE REPLACED WITH AN ANGULAR PAGE
+    </div>
+    
+    <!-- ********************** APP FOOTER ********************** -->
+    
+    <div class="text-center">
+      <p>
+        Copyright Tehilah &copy; 2018
+      </p>
+    </div>
+    
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
