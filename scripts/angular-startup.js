@@ -1,5 +1,5 @@
 /** create a new AngularJS app instance **/
-var app = angular.module ( 'My-Store', [ 'ngRoute' ] );
+var app = angular.module ( 'My-Forum', [ 'ngRoute' ] );
 
 app.config ([ 
   '$routeProvider', function ( $routeProvider ) {
@@ -12,9 +12,9 @@ app.config ([
 		  
 		  /** FORUM MODULE **/
 			.when (
-				'/products', {
-					templateUrl: 'scripts/modules/products/products-view.html',
-					controller: 'ProductController'
+				'/forum', {
+					templateUrl: 'scripts/modules/forum/forum-view.html',
+					controller: 'ForumController'
 				}
 			)
 			

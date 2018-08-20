@@ -43,7 +43,7 @@ function toggleTable(){
 }
 
 function number(){
-  alert("Please email me at tmhundaz@gmail.com. Thank you!!!");
+  alert("Please call me on 01223556767. Thank you!!!");
 }
 
 

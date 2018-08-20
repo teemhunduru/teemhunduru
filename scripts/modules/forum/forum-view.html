@@ -1,0 +1,76 @@
+<!-- FORUM CSS RULES / STYLES -->
+<style>
+  
+  #forum-view {
+    color: green;
+  }
+  
+</style>
+
+<!-- FORUM VIEW STRUCTURE -->
+<div id="forum-view">
+  
+  <!-- Forum page title -->
+  <h2>{{ forumTitle }}</h2>
+  
+  <!-- Console.WriteLine("Hello, {0}!", userName); -->
+  
+  <!-- Topics -->
+  <div id="forum-topics" class="table-responsive">
+    <table class="table" id="topics">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Topic</th>
+          <th>No. of Posts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Anna</td>
+          <td>Pitt</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Anna</td>
+          <td>Pitt</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  
+  <!-- Posts -->
+  <div id="forum-posts" class="table-responsive">
+    <table class="table" id="posts">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Post content</th>
+          <th>User</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Anna</td>
+          <td>Pitt</td>
+          <td>12/12/2020</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Anna</td>
+          <td>Pitt</td>
+          <td>12/12/2020</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="container">
+    <!--  <h2>Please click to view Posts</h2>  -->
+    <button type="button" onclick=toggleTable() class="btn btn-primary">VIEW/HIDE POSTS</button>
+  </div>
+</div>
